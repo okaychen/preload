@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background: #eee;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 60px 0px;
+    text-align: center;
+}
+.box img{
+	width: 1000px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px #ccc;
+}
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0px 25px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px #999;
+    background: #81cfa2;
+    color: #eee;
+    text-align: center;
+}
