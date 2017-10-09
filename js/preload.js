@@ -1,13 +1,30 @@
 var imgs = [
-    'http://img2.imgtn.bdimg.com/it/u=1142822403,32080314&fm=214&gp=0.jpg',
-    'http://img2.imgtn.bdimg.com/it/u=1999334205,3363040809&fm=27&gp=0.jpg',
-    'http://p8.aipai.com/photo/179/19254179/photo/68/2653508/2653508_normal.jpg',
-    'http://img5.imgtn.bdimg.com/it/u=3088271132,1257566149&fm=27&gp=0.jpg',
-    'http://img5.duitang.com/uploads/item/201410/24/20141024162359_XmNQJ.jpeg'
+    'images/img1.jpg',
+    'images/img2.jpeg',
+    'images/img3.jpg',
+    'images/img4.jpg',
+    'images/timg.jpg',
+    'images/timg2.jpg',
+    'images/360wallpaper.jpg'
 ];
 
 var index = 0,
-    len = imgs.length;
+    len = imgs.length,
+    count = 0,
+    $progress = $('.progress');
+
+$.each(imgs, function(i, src) {
+    var imgObj = new Image();
+    $(imgObj).on('load error', function() {
+        $progress.html(Math.round((count + 1) / len * 100) + '%');
+        if (count >= len - 1) {
+            $('.loading').hide();
+            document.title = '1/' + len;
+        }
+        count++;
+    })
+    imgObj.src = src;
+})
 
 $('.btn').on('click', function() {
     if ($(this).data('control') === 'prev') { // 上一张
@@ -16,5 +33,5 @@ $('.btn').on('click', function() {
         index = Math.min(len - 1, ++index);
     }
     document.title = (index + 1) + '/' + len;
-    $('#img').attr('src',imgs[index]); 
+    $('#img').attr('src', imgs[index]);
 })
