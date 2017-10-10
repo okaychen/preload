@@ -5,7 +5,6 @@
     function PreLoad(imgs, options) {
         this.imgs = (typeof imgs === 'string') ? [imgs] : imgs;
         this.opts = $.extend({}, PerLoad.DEFAULTS, options);
-
         this._unoredered();
     }
     PreLoad.DEFAULTS = {
