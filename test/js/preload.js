@@ -1,3 +1,5 @@
+// JS原生实现无序图片预加载
+
 let imgs = [
     'images/img1.jpg',
     'images/img2.jpeg',
@@ -10,18 +12,22 @@ let imgs = [
 
 let index = 0,
     count = 0,
-    length = imgs.length,
+    len = imgs.length,
     $progress = document.querySelector('.progress'),
-    $btn = document.querySelectorAll('.btn');
+    $btn = document.querySelectorAll('.btn'),
+    ImgId = document.getElementById('img');
 
 
-for (let i in $btn){
-	$btn[i].onclick = function(){
-		let dataName = this.getAttribute('data-control')
-		if(dataName === 'prev'){
-			console.log('上一页');
-		} else{
-			console.log('下一页');
-		}
-	}
+for (let i in $btn) {
+    $btn[i].onclick = function() {
+        let dataName = this.getAttribute('data-control')
+        if (dataName === 'prev') { // 上一页
+            index = Math.max(0, --index);
+        } else {
+            index = Math.min(len - 1, ++index)
+        }
+
+        document.title = (index + 1) + '/' + len;
+        ImgId.setAttribute('src', imgs[index]);
+    }
 }

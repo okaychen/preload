@@ -1,3 +1,5 @@
+// jQuery实现无序图片预加载
+
 var imgs = [
     'images/img1.jpg',
     'images/img2.jpeg',
