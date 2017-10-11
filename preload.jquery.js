@@ -1,5 +1,4 @@
 // 图片预加载
-
 (function() {
 
     function PreLoad(imgs, options) {
