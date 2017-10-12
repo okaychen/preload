@@ -22,5 +22,43 @@
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/preload.jquery.js"></script>
+<script>
+    var imgs = [
+    'images/img1.jpg',
+    'images/img2.jpeg',
+    'images/img3.jpg',
+    'images/img4.jpg',
+    'images/timg.jpg',
+    'images/timg2.jpg',
+    'images/360wallpaper.jpg'
+    ];
 
+    var index = 0,
+        len = imgs.length,
+        $progress = $('.progress');
+
+
+    // 实例化插件对象
+    $.preload(imgs,{
+        each:function(count){
+            $progress.html(Math.round((count+1)/len*100) + '%');
+        },
+        all:function(){
+            $('.loading').hide();
+            document.title = '1/' + len;
+        }
+    });
+
+
+    // 图片切换
+    $('.btn').on('click', function() {
+        if ($(this).data('control') === 'prev') { // 上一张
+            index = Math.max(0, --index);
+        } else { // 下一张
+            index = Math.min(len - 1, ++index);
+        }
+        document.title = (index + 1) + '/' + len;
+        $('#img').attr('src', imgs[index]);
+    })
+</script>
 </html>
