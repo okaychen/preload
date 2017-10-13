@@ -23,7 +23,7 @@
 
             $(imgObj).on('load error', function() {
 
-                opts.each && opts.each(count);  // 要考虑没有传递参数的情况opts.each === null 
+                opts.each && opts.each(count); // 要考虑没有传递参数opts.each === null 的情况
 
                 if (count > len - 1) {
                     opts.all && opts.all();
@@ -36,7 +36,7 @@
 
     $.extend({
         preload: function(imgs, opts) {
-            new PreLoad(imgs.opts);
+            new PreLoad(imgs, opts);
         }
     });
 
