@@ -25,7 +25,7 @@
 
                 opts.each && opts.each(count); // 要考虑没有传递参数opts.each === null 的情况
 
-                if (count > len - 1) {
+                if (count >= len - 1) {
                     opts.all && opts.all();
                 }
                 count++;
