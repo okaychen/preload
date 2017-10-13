@@ -2,8 +2,32 @@
 
 ## 目录结构描述
 
-|
-|
+preload
+
+>>css
+
+>>images
+
+>>js
+
+>>test
+
+>>>images
+
+>>>css
+
+>>>js
+
+>>index.jquery.html
+
+>>index.html
+
+>index.jquery.html
+
+>READEME.md
+
+
+
 
 
 ## 图片预加载介绍
