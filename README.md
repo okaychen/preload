@@ -1,16 +1,15 @@
 # PreLoad
 
+## 用法
+
+
+
 ## 目录结构描述
 
 preload
 
->>css
-
->>images
-
->>js
-
->>test
+>第一部分
+>>test   (测试，分别用jQuery和js实现预加载)
 
 >>>images
 
@@ -18,11 +17,18 @@ preload
 
 >>>js
 
->>index.jquery.html
+>>index.jquery.html  (测试jQuery实现)
 
->>index.html
+>>index.html    (测试js实现)
 
->index.jquery.html
+>第二部分
+>>css    
+
+>>images   
+
+>>js  (包含初步完成的预加载jQuery插件)
+
+>index.jquery.html (测试jQuery插件)
 
 >READEME.md
 
