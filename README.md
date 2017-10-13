@@ -2,9 +2,37 @@
 
 ## 用法
 
+实例化插件对象:
+
+插件名：preload;
+
+参数：①图片(数组或者String类型<一个图片>)，②方法;
+
+方法：目前jQuery插件中提供each和all方法;
+
+* each 每一张图片加载完成之后执行
+
+* all  所有图片加载完毕后执行
+
+
+实例化对象：
+
+```
+$.preload(imgs,{
+    each:function(count){
+        //...一张图片加载完后做处理
+    },
+    all:function(){
+        //...所有图片加载完毕之后做处理
+    }
+});
+```
+
 
 
 ## 目录结构描述
+
+目录大体结构如下，两部分可分离：
 
 preload
 
@@ -20,7 +48,7 @@ preload
 >>index.jquery.html  (测试jQuery实现)
 
 >>index.html    (测试js实现)
-
+***
 >第二部分
 >>css    
 
@@ -31,9 +59,6 @@ preload
 >index.jquery.html (测试jQuery插件)
 
 >READEME.md
-
-
-
 
 
 ## 图片预加载介绍
