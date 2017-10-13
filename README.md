@@ -1,27 +1,10 @@
 # PreLoad
 
 ## 目录结构描述
-Foo/
-|-- bin/
-|   |-- foo
-|
-|-- foo/
-|   |-- tests/
-|   |   |-- __init__.py
-|   |   |-- test_main.py
-|   |
-|   |-- __init__.py
-|   |-- main.py
-|
-|-- docs/
-|   |-- conf.py
-|   |-- abc.rst
-|
-|-- setup.py
-|-- requirements.txt
-|-- README
 
-## 图片预加载
+
+
+## 图片预加载介绍
 
 >从字面上来看：预，就是预先；预加载：即预先提前加载。
 >
