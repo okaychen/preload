@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>图片预加载之有序加载-juqery实现</title>
+    <link rel=stylesheet href="css/preload.css">
+</head>
+
+<body>
+    <div class="box">
+        <img id="img" src="images/timg2.jpg" alt="pic">
+        <p>
+            <a href="javascript:;" class="btn" data-control='prev'>上一张</a>
+            <a href="javascript:;" class="btn" data-control='next'>下一张</a>
+        </p>
+    </div>
+    <!-- loading -->
+    <div class="loading">
+        <p class="progress">0%</p>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/preload.jquery.js"></script>
+
+</html>
