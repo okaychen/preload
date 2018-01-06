@@ -12,7 +12,18 @@
 
 ## 用法
 
-实例化插件对象:
+### 下载
+
+`git clone git@github.com:okaychen/preload.git`
+
+### 使用
+
+`<script src="path/prelaod.js"></script>`
+
+或者`import prelaod from 'path/prelaod.js'`
+
+
+### 实例化对象:
 
 插件名：`preload`;
 
@@ -23,8 +34,7 @@
 * `each` 每一张图片加载完成之后执
 * `all`  所有图片加载完毕后执行
 
-
-实例化对象：
+示例：
 
 ```
 $.preload(imgs,{
@@ -37,36 +47,25 @@ $.preload(imgs,{
 });
 ```
 
-
 ## 目录结构描述
 
-目录大体结构如下，两部分可分离：
+目录大体结构如下
 
+```
 preload
-
->第一部分
->>test-unordered   (测试，分别用jQuery和js实现预加载)
-
->>>images
-
->>>css
-
->>>js
-
->>index.jquery.html  (测试jQuery实现)
-
->>index.html    (测试js实现)
-***
->第二部分
->>css    
-
->>images   
-
->>js  (包含初步完成的预加载jQuery插件)
-
->index.jquery.html (测试jQuery插件)
-
->READEME.md
+│   README.md 
+│   .gitattributes
+│   index.jquery.html
+|
+└───css
+│   │   prelaod.css
+│   
+└───images  
+|
+└───js
+    │   jquery.min.js
+    │   preload.jquery.js
+```
 
 
 
