@@ -14,14 +14,20 @@
 
 ### 下载
 
-`git clone git@github.com:okaychen/preload.git`
+```s
+git clone git@github.com:okaychen/preload.git`
+```
 
 ### 使用
 
-`<script src="path/prelaod.js"></script>`
+```js
+<script src="path/prelaod.js"></script>
+```
 
-或者`import prelaod from 'path/prelaod.js'`
-
+或者
+```js
+import prelaod from 'path/prelaod.js'
+```
 
 ### 实例化对象:
 
@@ -36,7 +42,7 @@
 
 示例：
 
-```
+```js
 $.preload(imgs,{
     each:function(count){
         //...一张图片加载完后做处理
