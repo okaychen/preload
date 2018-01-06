@@ -1,4 +1,7 @@
-# PreLoad
+# preLoad
+
+![](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)
+![](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
 
 ## 图片预加载介绍
 
@@ -15,7 +18,7 @@
 ### 下载
 
 ```s
-git clone git@github.com:okaychen/preload.git`
+git clone git@github.com:okaychen/preload.git
 ```
 
 ### 使用
