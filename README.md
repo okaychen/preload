@@ -1,7 +1,7 @@
 # preLoad
 
-![](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)
-![](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
+[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork&style=plastic)]()
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars&style=plastic)]()
 
 ## 图片预加载介绍
 
