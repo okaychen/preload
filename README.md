@@ -60,6 +60,9 @@ $.preload(imgs,{
 
 目录大体结构如下
 
+`process`分支下`proload.js`基于原生JS实现图片预加载
+
+`master`分支结构
 ```
 preload
 │   README.md 
@@ -73,7 +76,7 @@ preload
 |
 └───js
     │   jquery.min.js
-    │   preload.jquery.js
+    │   preload.js  //基于jQuery封装的小插件
 ```
 
 
